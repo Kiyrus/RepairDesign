@@ -1,0 +1,44 @@
+.first-section
+    {
+        background-image: url('../images/backgrounds/first-section.jpg');
+        background-size: cover;
+        height: 707px;
+        padding-top: 194px;
+        position: relative;
+    }
+
+.first-section__cover
+    {
+        content:'';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 0;
+    }
+
+.first-section__container
+    {
+        position: relative;
+        max-width: 676.11px;
+        max-height: 305px;
+        padding: 18px;
+        margin-left: 134px;
+        margin-top: 194px;
+        margin-bottom: 208px;
+        white-space: nowrap;
+    }
+
+.first-section__container > h1,p
+    {
+        color: rgba(255, 255, 255, 1);
+    }
+
+.first-section__button
+    {
+        border: 1px solid rgba(255, 255, 255, 1);
+        color: none;
+        background-color: rgba(227, 184, 115, 0)
+    }
