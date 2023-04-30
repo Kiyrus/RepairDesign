@@ -6,14 +6,26 @@ header
 .header__container
     {
         max-width: 1256px;
-        height: 83px;
-        margin: 0 auto;
+        min-width: 375px;
+        max-height: 83px;
+        min-height: 57px;
+        margin: auto;
+    }
+
+.header__body
+    {
+        margin: 0 18px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
         white-space: nowrap;
+    }
+
+.header__navigation
+    {
+        margin: 22px 0;
     }
 
 .header__logo,
