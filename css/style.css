@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
 body
     {
         margin: 0;
-        font-family: Nunito Sans, Arial;
+        font-family: 'Nunito Sans', Arial;
     }
 
 .button
@@ -15,4 +18,11 @@ body
         color: rgba(255, 255, 255, 1);
         text-transform: uppercase;
         cursor: pointer;
+    }
+
+.cool-orange-text
+    {
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: 400;
     }

@@ -42,3 +42,43 @@
         color: none;
         background-color: rgba(227, 184, 115, 0)
     }
+
+.second-section
+    {
+        background-color: rgba(19, 19, 19, 1);
+    }
+
+.second-section__container
+    {
+        max-width: 1171px;
+        max-height: 552.28px;
+        min-width: 340px;
+    }
+
+.second-section__list
+    {
+        list-style: none;
+    }
+
+/* .second-section__list__item
+    {
+        
+    } */
+
+.second-section__list__item a
+    {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+    }
+
+.second-section__list__item a:hover
+    {
+        color: rgba(227, 184, 115, 1);
+        text-decoration: underline;
+    }
+
+.card__title
+    {
+        display: inline;
+    }
