@@ -22,6 +22,7 @@ body
 
 .cool-orange-text
     {
+        color: rgba(227, 184, 115, 1);
         font-family: 'Yeseva One', Arial;
         font-style: normal;
         font-weight: 400;
