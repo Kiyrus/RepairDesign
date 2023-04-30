@@ -1,2 +1,2 @@
 # RepairDesign
-This is a working project that is available to everyone.
+This is a training project, it is freely available.
