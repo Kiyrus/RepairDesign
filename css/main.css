@@ -31,7 +31,12 @@
         white-space: nowrap;
     }
 
-.first-section__container > h1,p
+.first-section__title
+    {
+        color: rgba(255, 255, 255, 1);
+    }
+
+.first-section__copy
     {
         color: rgba(255, 255, 255, 1);
     }
@@ -60,25 +65,20 @@
         list-style: none;
     }
 
-/* .second-section__list__item
+/* .second-section__list-item
     {
         
     } */
 
-.second-section__list__item a
+.second-section__list-link
     {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.3);
         cursor: pointer;
     }
 
-.second-section__list__item a:hover
+.second-section__list-link:hover
     {
         color: rgba(227, 184, 115, 1);
         text-decoration: underline;
-    }
-
-.card__title
-    {
-        display: inline;
     }

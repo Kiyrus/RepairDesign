@@ -12,81 +12,84 @@
     </head>
     <body>
         <header class="header">
-            <div class="header-wrapper">
+            <div class="header__container">
                 <span class="header__logo">IC "Repair Design Project"</span>
                 <nav class="header__navigation">
                     <ul class="header__list">
-                        <li class="header__list__item"><a href="#">HOME</a></li>
-                        <li class="header__list__item"><a href="#">PROJECTS</a></li>
-                        <li class="header__list__item"><a href="#">MEASUREMENT</a></li>
-                        <li class="header__list__item"><a href="#">TEAM</a></li>
-                        <li class="header__list__item"><a href="#">REVIEWS</a></li>
-                        <li class="header__list__item"><a href="#">CONTACTS</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="#">HOME</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="#">PROJECTS</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="#">MEASUREMENT</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="#">TEAM</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="#">REVIEWS</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="#">CONTACTS</a></li>
                     </ul>
                 </nav>
-                <span><a class="header__telefon" href="tel:+79287683239">+7 (928) 768-32-39</a></span>
-                <button class="button">Request a call</button>
+                <a class="header__telefon" href="tel:+79287683239">+7 (928) 768-32-39</a>
+                <button class="button header__button" type="button">Request a call</button>
             </div>
         </header>
         <main>
             <section class="first-section">
                 <div class="first-section__cover"></div>
                 <div class="first-section__container">
-                    <h1>
-                        Turnkey Repair in the city of 
-                        <span style="color:rgba(227, 184, 115, 1)">
-                            Rostov-on-Don
-                        </span>
+                    <h1 class="first-section__title">Turnkey Repair in the city of 
+                        <span class="cool-orange-text">Rostov-on-Don</span>
                     </h1>
-                    <p>
+                    <p class="first-section__copy">
                         Get ready-made turnkey repairs on time<br>with work time saving up to 45 days and 20% from<br>cost of materials due to the organization of work
                     </p>
-                    <button class="button">CALCULATE THE COST</button>
-                    <button class="button first-section__button">SUBMIT YOUR APPLICATION</button>
+                    <button class="button" type="button">CALCULATE THE COST</button>
+                    <button class="button first-section__button" type="button">SUBMIT YOUR APPLICATION</button>
                 </div>
             </section>
             <section class="second-section">
                 <div class="second-section__container">
                     <ul class="second-section__list">
-                        <li class="second-section__list__item"><a href="#">Rostov-on-Don, Admiral</a></li>
-                        <li class="second-section__list__item"><a href="#">Sochi Thieves</a></li>
-                        <li class="second-section__list__item"><a href="#">Rostov-on-Don Patriotic</a></li>
+                        <li class="second-section__list-item"><a class="second-section__list-link" href="#">Rostov-on-Don, Admiral</a></li>
+                        <li class="second-section__list-item"><a class="second-section__list-link" href="#">Sochi Thieves</a></li>
+                        <li class="second-section__list-item"><a class="second-section__list-link" href="#">Rostov-on-Don Patriotic</a></li>
                     </ul>
                     <div class="second-section__card">
                         <div class="card__body">
                             <div class="card__header">
-                                <title class="card__title cool-orange-text">Completed projects</title>
+                                <h1 class="card__title cool-orange-text">Completed projects</h1>
                                 <p class="card__copy">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
                             </div>
                             <div class="card__main">
-                                <div class="card__main__item">
+                                <div class="card__main-item">
                                     <h3>City:</h3>
                                     <span>Rostov-on-Don LCD admiral</span>
                                 </div>
-                                <div class="card__main__item">
+                                <div class="card__main-item">
                                     <h3>Apartment area:</h3>
                                     <span>81 m2</span>
                                 </div>
-                                <div class="card__main__item">
+                                <div class="card__main-item">
                                     <h3>Repair time:</h3>
                                     <span>3.5 months</span>
                                 </div>
-                                <div class="card__main__item">
+                                <div class="card__main-item">
                                     <h3>Repair Cost:</h3>
                                     <span>Upon request</span>
                                 </div>
                             </div>
                             <div class="card__footer">
                                 <div class="card__button">
-                                    <img class="card__button__left-hand" src="../images/marks/second-section_left-hand.svg" alt="">
-                                    <div class="card__button__point"></div>
-                                    <div class="card__button__point"></div>
-                                    <div class="card__button__point"></div>
-                                    <img class="card__button__right-hand" src="../images/marks/second-section_right-hand.svg" alt="">
+                                    <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 13.2761L2.29917e-05 6.63808L6.63807 3.80641e-05L7.58563 0.947606L1.89516 6.63808L7.58563 12.3286L6.63807 13.2761Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.947579 5.96828L41.4556 5.96829L41.4556 7.30835L0.947578 7.30834L0.947579 5.96828Z" fill="white"/>
+                                    </svg>                                        
+                                    <div class="card__point"></div>
+                                    <div class="card__point"></div>
+                                    <div class="card__point"></div>
+                                    <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0451 0L41.6831 6.63804L35.0451 13.2761L34.0975 12.3285L39.788 6.63804L34.0975 0.947567L35.0451 0Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M40.7356 7.30784L0.227569 7.30784L0.22757 5.96777L40.7356 5.96778L40.7356 7.30784Z" fill="white"/>
+                                    </svg>                                        
                                 </div>
                             </div>
                         </div>
-                        <img class="second-section__img" src="../images/material_images/completed_projects.jpg" alt="">
+                        <img class="second-section__img" src="../images/material_images/completed_projects.jpg" alt="An example of our work">
                     </div>
                 </div>
             </section>
