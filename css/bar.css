@@ -1,9 +1,10 @@
-header
+header,
+footer
     {
         background: rgba(19, 19, 19, 1);
     }
 
-.header__container
+.bar__container
     {
         max-width: 1256px;
         min-width: 375px;
@@ -12,7 +13,7 @@ header
         margin: auto;
     }
 
-.header__body
+.bar__body
     {
         margin: 0 18px;
         display: flex;
@@ -23,13 +24,13 @@ header
         white-space: nowrap;
     }
 
-.header__navigation
+.bar__navigation
     {
         margin: 22px 0;
     }
 
-.header__logo,
-.header__telefon
+.bar__logo,
+.bar__telefon
     {
         color:rgba(227, 184, 115, 1);
         font-style: normal;
@@ -39,13 +40,13 @@ header
         text-align: right;
     }
 
-.header__telefon
+.bar__telefon
     {
         text-decoration: none;
         text-decoration-line: underline;
     }
 
-.header__list
+.bar__list
     {
         display: flex;
         flex-direction: row;
@@ -53,7 +54,7 @@ header
         list-style: none;
     }
 
-.header__list-item
+.bar__list-item
     {
         margin-right: 47px;
         font-style: normal;
@@ -62,13 +63,13 @@ header
         line-height: 15px;
     }
 
-.header__list-link
+.bar__list-link
     {
         text-decoration: none;
         color: white;
     }
 
-.header__list-link:hover
+.bar__list-link:hover
     {
         color: rgba(227, 184, 115, 1);
     }
