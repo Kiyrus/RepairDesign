@@ -396,8 +396,7 @@ footer
         margin-top: 91.5px;
     }
 
-.third-section__form-name,
-.third-section__form-number
+.third-section__form
     {
         display: flex;
         flex-direction: column;
@@ -411,13 +410,18 @@ footer
 .third-section__input
     {
         border: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 1);
+        border-bottom: 1px solid rgba(54, 54, 54, 0.3)
     }
 
 .third-section__input::placeholder
     {
         color: rgba(0, 0, 0, 1);
     }
+
+/* .third-section__input::-moz-placeholder 
+    {
+        color: rgb(255, 0, 0);
+    } */
 
 .third-section__form-button
     {
@@ -550,4 +554,74 @@ footer
         padding: 17px 16px;
         white-space: nowrap;
         margin-top: -28px;
+    }
+
+.fourth-section__advantages-and-application
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 230px;
+    }
+
+.fourth-section__advantages-list
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 105px;
+    }
+
+.fourth-section__advantages-item
+    {
+        display: flex;
+    }
+
+/* .fourth-section__advantages-item-svg
+    {
+
+    } */
+
+.fourth-section__advantages-item-text
+    {
+        font-size: 14px;
+        line-height: 19px;
+        color: rgba(54, 54, 54, 1);
+    }
+
+.fourth-section__form-container
+    {
+        display: flex;
+        Justify-content: center;
+        align-items: center;
+    }
+
+.fourth-section__form-body
+    {
+        display: flex;
+        flex-direction: column;
+        max-width: 506px;
+        max-height: 509px;
+        margin: auto;
+        gap: 39px;
+        background: rgba(19, 19, 19, 1);
+        box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    }
+
+.fourth-section__form-wrapper
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+.fourth-section__checkbox-container
+    {   
+        display: flex;
+        flex-direction: row;
+    }
+
+.fourth-section__form--optional
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
     }
