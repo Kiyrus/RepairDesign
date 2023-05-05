@@ -23,9 +23,11 @@ footer
         position: relative;
     }
 
-.title
+.title,
+.subtitle
     {
         font-family: 'Yeseva One', Arial;
+        text-transform: uppercase;
     }
 
 .button
@@ -216,6 +218,7 @@ footer
         display: flex;
         flex-direction: column;
         max-height: 482px;
+        gap: 55px;
     }
 
 .second-section__card-title
@@ -223,7 +226,6 @@ footer
         font-size: 27px;
         line-height: 37px;
         letter-spacing: -0.07em;
-        text-transform: uppercase;
     }
 
 .second-section__card-copy
@@ -321,4 +323,132 @@ footer
     {
         color: rgba(227, 184, 115, 1);
         text-decoration: underline;
+    }
+
+.third-section__section-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 817px;
+        margin-top: -324px;
+    }
+
+.third-section__subtitle
+    {
+        color: rgba(255, 255, 255, 1);
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+.third-section__svg
+    {
+        display: flex;
+        margin-top: 12px;
+    }
+
+.third-section__line
+    {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-width: 1px;
+        width: 32px;
+        height: 1.54px;
+        align-self: center;
+        background: rgba(227, 184, 115, 1);
+        border-color: rgba(227, 184, 115, 1);
+        border-radius: 30px;
+    }
+
+.third-section__line--wide
+    {
+        width: 55px;
+        margin-top: 62px;
+    }
+
+.third-section__video-player-container
+    {
+        margin-top: 32px;
+    }
+
+.third-section__copy
+    {
+        margin-top: 34.5px;
+    }
+
+.third-section__form-body
+    {
+        display: flex;
+        gap: 50px;
+        max-height: 51px;
+        margin-top: 91.5px;
+    }
+
+.third-section__form-name,
+.third-section__form-number
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+.third-section__form-text-under-input
+    {
+        color: rgba(54, 54, 54, 0.5);
+    }
+
+.third-section__input
+    {
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 1);
+    }
+
+.third-section__input::placeholder
+    {
+        color: rgba(0, 0, 0, 1);
+    }
+
+.third-section__form-button
+    {
+        width: 200px;
+    }
+
+.third-section__checkbox-container
+    {
+        text-align: center;
+        margin-top: 35px;
+    }
+
+.third-section__checkbox-body 
+    {
+        cursor: pointer;
+    }
+
+.checkbox
+    {
+        display: none;
+    }
+
+.fake
+    {
+        display: inline-flex;
+        width: 18px;
+        height: 18px;
+        background: #E3B873;
+        color: #fff;
+        justify-content: center;
+    }
+
+.fake::before
+    {
+        content:"\2714";
+        opacity: 0;
+        transition: .2s;
+    }
+
+.checkbox:checked + .fake::before
+    {
+        opacity: 1;
     }
