@@ -58,6 +58,34 @@ footer
         color: rgba(227, 184, 115, 1);
     }
 
+.section__svg
+    {
+        display: flex;
+        gap: 9px;
+    }
+
+.section__line
+    {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-width: 1px;
+        width: 32px;
+        height: 1.54px;
+        align-self: center;
+        background: rgba(227, 184, 115, 1);
+        border-color: rgba(227, 184, 115, 1);
+        border-radius: 30px;
+    }
+
+.section__line--wide
+    {
+        width: 55px;
+        margin-top: 62px;
+    }
+
 .bar__body
     {
         margin: 0 18px;
@@ -343,30 +371,7 @@ footer
 
 .third-section__svg
     {
-        display: flex;
         margin-top: 12px;
-    }
-
-.third-section__line
-    {
-        display: block;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        margin-left: auto;
-        margin-right: auto;
-        border-width: 1px;
-        width: 32px;
-        height: 1.54px;
-        align-self: center;
-        background: rgba(227, 184, 115, 1);
-        border-color: rgba(227, 184, 115, 1);
-        border-radius: 30px;
-    }
-
-.third-section__line--wide
-    {
-        width: 55px;
-        margin-top: 62px;
     }
 
 .third-section__video-player-container
@@ -377,6 +382,10 @@ footer
 .third-section__copy
     {
         margin-top: 34.5px;
+        max-width: 681px;
+        font-size: 18px;
+        line-height: 37px;
+        text-align: center;
     }
 
 .third-section__form-body
@@ -451,4 +460,92 @@ footer
 .checkbox:checked + .fake::before
     {
         opacity: 1;
+    }
+
+.fourth-section__section-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+.fourth-section__subtitle
+    {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+.fourth-section__svg
+    {
+        display: flex;
+        gap: 9px;
+        margin-top: 12px;
+    }
+
+.fourth-section__cards-group
+    {
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+.fourth-section__card
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+.fourth-section__card-wrapper
+    {
+        margin-top: -130px;
+    }
+
+.fourth-section__card-body
+    {
+        display: flex;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+        max-width: 330px;
+        max-height: 286px;
+        padding: 25px 90px 50px 30px;
+    }
+
+.fourth-section__card-subtitle
+    {
+        font-size: 18px;
+        line-height: 25px;
+        color: rgba(54, 54, 54, 1);
+        text-transform: none;
+    }
+
+.fourth-section__card-list
+    {
+        margin-left: 15px;
+    }
+
+.fourth-section__card-item
+    {
+        list-style: disc;
+        color: rgba(149, 149, 149, 1);
+        font-size: 13px;
+        line-height: 27px;
+    }
+
+.fourth-section__card-orange-bottom
+    {
+        background: rgba(227, 184, 115, 1);
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Yeseva One';
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        max-width: 228px;
+        max-height: 54px;
+        padding: 17px 16px;
+        white-space: nowrap;
+        margin-top: -28px;
     }
