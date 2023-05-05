@@ -403,7 +403,7 @@ footer
         flex-direction: column;
     }
 
-.third-section__form-text-under-input
+.third-section__form-text-over-input
     {
         color: rgba(54, 54, 54, 0.5);
     }
