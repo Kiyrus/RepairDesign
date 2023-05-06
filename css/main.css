@@ -23,6 +23,18 @@ footer
         position: relative;
     }
 
+.section__cover
+    {
+        content:'';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 0;
+    }
+
 .title,
 .subtitle
     {
@@ -163,18 +175,6 @@ footer
         background-size: cover;
         background-position: center;
         position: relative;
-    }
-
-.first-section__cover
-    {
-        content:'';
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.7);
-        z-index: 0;
     }
 
 .first-section__container
@@ -717,4 +717,76 @@ footer
         color: rgba(227, 184, 115, 1);
         font-size: 18px;
         line-height: 26px;
+    }
+
+.fifth-section
+    {
+        width: 100%;
+        max-height: 864px;
+        background-image: url('../images/backgrounds/fifth-section.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+.fifth-section__container
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-height: 864px;
+        margin-top: 242px;
+    }
+
+.fifth-section__title
+    {
+        font-size: 27px;
+        line-height: 37px;
+        margin-top: 130px;
+    }
+
+.fifth-section__list
+    {
+        display: flex;
+        flex-direction: column;
+        max-width: 299px;
+        max-height: 516px;
+        gap: 10px;
+        margin-top: 47px;
+    }
+
+.fifth-section__list-link
+    {
+        font-size: 20px;
+        line-height: 38px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+.fifth-section__list-link:hover
+    {
+        color: rgba(227, 184, 115, 1);
+        border-bottom: solid 1px rgba(227, 184, 115, 1);
+    }
+
+.fifth-section__img-blocks
+    {
+        display: flex;
+        gap: 43px;
+    }
+
+.fifth-section__img-block
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 39px;
+    }
+
+.fifth-section__img-block--first
+    {
+        margin-top: -40px;
+    }
+
+.fifth-section__img-block--second
+    {
+        margin-top: -112px;
     }
