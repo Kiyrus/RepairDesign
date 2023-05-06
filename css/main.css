@@ -377,6 +377,28 @@ footer
 .third-section__video-player-container
     {
         margin-top: 32px;
+        position: relative;
+        max-width: 817px;
+        max-height: 434px;
+    }
+
+.third-section__video-player-cover
+    {
+        content:'';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 0;
+    }
+
+.third-section__video-player-button
+    {
+        position: absolute;
+        left: 40%;
+        top: 35%;
     }
 
 .third-section__copy
@@ -789,4 +811,106 @@ footer
 .fifth-section__img-block--second
     {
         margin-top: -112px;
+    }
+
+.sixth-section
+    {
+        background-image: url('../images/backgrounds/sixth-section.jpg');
+        background-repeat: repeat-x;
+        background-position-y: bottom;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+.sixth-section__container
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 110px;
+    }
+
+.sixth-section__subtitle
+    {
+        text-align: center;
+    }
+
+.sixth-section__svg
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+.sixth-section__section-line
+    {
+        margin: 0;
+    }
+
+.sixth-section__copy
+    {
+        font-size: 18px;
+        line-height: 29px;
+        text-align: center;
+        color: rgba(54, 54, 54, 1);
+        margin-top: 25px;
+    }
+
+.sixth-section__card-list
+    {
+        display: flex;
+        gap: 54px;
+        margin-top: 35px;
+        margin-bottom: 382px;
+    }
+
+.sixth-section__card-body
+    {
+        display: flex;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+        padding: 24px 32px 90px 20px;
+        max-width: 376px;
+        max-height: 428px;
+    }
+
+.sixth-section__card-id
+    {
+        display: flex;
+        gap: 23px;
+    }
+
+.sixth-section__card-photo
+    {
+        border-radius: 50px;
+    }
+
+.sixth-section__card-name
+    {
+        font-family: 'Yeseva One';
+        font-size: 18px;
+        line-height: 23px;
+        color: rgba(24, 24, 24, 1);
+        padding-top: 15px;
+    }
+
+.sixth-section__card-text
+    {
+        font-size: 13px;
+        line-height: 180%;
+        color: rgba(149, 149, 149, 1);
+        margin-top: 22px;
+    }
+
+.sixth-section__svg-container
+    {
+        width: 293.75px;
+        height: 54.03px;
+        margin-left: -34px;
+        margin-top: 35px;
+    }
+
+.seventh-section__container
+    {
+        
     }
