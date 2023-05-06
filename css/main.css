@@ -246,7 +246,7 @@ footer
         display: flex;
         flex-direction: column;
         max-height: 482px;
-        gap: 55px;
+        gap: 58px;
     }
 
 .second-section__card-title
@@ -428,13 +428,15 @@ footer
         width: 200px;
     }
 
-.third-section__checkbox-container
+.third-section__checkbox-container,
+.checkbox-container
     {
         text-align: center;
         margin-top: 35px;
     }
 
-.third-section__checkbox-body 
+.third-section__checkbox-body,
+.checkbox-body
     {
         cursor: pointer;
     }
@@ -558,39 +560,64 @@ footer
 
 .fourth-section__advantages-and-application
     {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        display: flex;
         margin-top: 230px;
+        justify-content: space-between;
+    }
+
+.fourth-section__back-img
+    {
+        position: absolute;
+        z-index: -1;
+        left: -400px;
+        bottom: 90px;
     }
 
 .fourth-section__advantages-list
     {
         display: flex;
         flex-direction: column;
-        gap: 105px;
+        height: 508px;
+        gap: 102px;
+        margin-left: 146px;
     }
 
 .fourth-section__advantages-item
     {
         display: flex;
+        align-items: center;
     }
 
-/* .fourth-section__advantages-item-svg
+.fourth-section__item-number
     {
-
-    } */
+        display: flex;
+        justify-content: center;
+        background: rgba(227, 184, 115, 1);
+        border: 8px solid #FFFFFF;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+        border-radius: 30px;
+        width: 51.76px;
+        height: 51.76px;
+        font-family: 'Yeseva One';
+        font-size: 18px;
+        line-height: 25px;
+        color: rgba(255, 255, 255, 1);
+        padding-top: 5px;
+    }
 
 .fourth-section__advantages-item-text
     {
         font-size: 14px;
         line-height: 19px;
         color: rgba(54, 54, 54, 1);
+        margin-left: 17px;
     }
 
 .fourth-section__form-container
     {
         display: flex;
-        Justify-content: center;
+        Justify-content: flex-end;
         align-items: center;
     }
 
@@ -598,25 +625,60 @@ footer
     {
         display: flex;
         flex-direction: column;
-        max-width: 506px;
-        max-height: 509px;
-        margin: auto;
-        gap: 39px;
+        align-items: center;
+        width: 506px;
+        height: 509px;
         background: rgba(19, 19, 19, 1);
         box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+        box-sizing: content-box;
+    }
+
+.fourth-section__form-text
+    {
+        color: rgba(255, 255, 255, 1);
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        max-width: 297px;
+        margin-top: 28px;
     }
 
 .fourth-section__form-wrapper
     {
         display: flex;
         flex-direction: column;
+        margin-top: 29px;
+        width: 408px;
+        height: 244px;
         gap: 48px;
+    }
+
+.fourth-section__form
+    {
+        display: flex;
+        flex-direction: column;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+        max-width: 408px;
+        gap: 7px;
+    }
+
+.fourth-section__form-text-over-input
+    {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+.fourth-section__input::placeholder
+    {
+        color: rgba(255, 255, 255, 1);
     }
 
 .fourth-section__checkbox-container
     {   
         display: flex;
         flex-direction: row;
+        margin-top: 30px;
+        margin-left: 50px;
+        align-self: flex-start;
     }
 
 .fourth-section__form--optional
@@ -624,4 +686,35 @@ footer
         display: flex;
         flex-direction: column;
         gap: 16px;
+    }
+
+.fourth-section__checkbox-body
+    {
+        color: white;
+    }
+
+.fourth-section__form-button
+    {
+        margin-top: 39px;
+        margin-right: 50px;
+        width: 213px;
+        height: 51px;
+        align-self: flex-end;
+    }
+
+.fourth-section__application-pig-container
+    {
+        display: flex;
+        align-items: center;
+        align-self: flex-end;
+        width: 441px;
+        height: 72px;
+        margin-top: 50px;
+    }
+
+.fourth-section__bottom-text
+    {
+        color: rgba(227, 184, 115, 1);
+        font-size: 18px;
+        line-height: 26px;
     }
