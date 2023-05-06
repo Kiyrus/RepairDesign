@@ -380,6 +380,8 @@ footer
         position: relative;
         max-width: 817px;
         max-height: 434px;
+        display: grid;
+        place-items: center;
     }
 
 .third-section__video-player-cover
@@ -394,11 +396,10 @@ footer
         z-index: 0;
     }
 
-.third-section__video-player-button
-    {
+
+.third-section__video-player-button 
+    { 
         position: absolute;
-        left: 40%;
-        top: 35%;
     }
 
 .third-section__copy
