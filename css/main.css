@@ -761,7 +761,7 @@ footer
 .fifth-section
     {
         width: 100%;
-        max-height: 864px;
+        height: 864px;
         background-image: url('../images/backgrounds/fifth-section.jpg');
         background-size: cover;
         background-position: center;
@@ -781,7 +781,12 @@ footer
     {
         font-size: 27px;
         line-height: 37px;
-        margin-top: 130px;
+        margin-top: 70px;
+    }
+
+.fifth-section__mobile-slider
+    {
+        display: none;
     }
 
 .fifth-section__list
@@ -1048,62 +1053,30 @@ footer
         margin-top: 50px;
     }
 
-@media (max-width: 770px)
+.seventh-section__map-container--phone-inline
+    {
+        display: none;
+    }
+
+.duck
+    {
+        display: none;
+    }
+
+@media (max-width: 1100px)
     {
         .bar__body
             {
                 height: 57px;
             }
-        .bar__navigation,
-        .bar__button
+        
+        .second-section__list-with-img
             {
                 display: none;
             }
-        .first-section__container
-            {
-                padding: 85px 18px 61px 18px;
-                max-width: 340px;
-            }
-        .first-section__body
-            {
-                display: flex;
-                flex-direction: column;
-                margin: 0;
-            }
-        .first-section__container,
-        .first-section__body
-            {
-                max-height: 476px;
-            }
-        .first-section__title
-            {
-                font-size: 23px;
-                line-height: 31px;
-            }
-        .first-section__copy
-            {
-                font-size: 14px;
-                line-height: 19px;
-                margin-top: 16px;
-            }
-        .first-section__button-container
-            {
-                flex-direction: column;
-                gap: 25px;
-                margin-top: 32px;
-            }
-        .first-section__button
-            {
-                width: 100%;
-            }
         
-        .second-section__container
-            {
-                padding: 36px 17px 1100px 17px;
-            }
-        
-        .second-section__list-with-img,
-        .second-section__card-footer
+        .bar__navigation,
+        .bar__button
             {
                 display: none;
             }
@@ -1122,6 +1095,92 @@ footer
             {
                 margin-left: auto;
                 margin-right: auto;
+            }
+        
+        .fourth-section__cards-group
+            {
+                flex-direction: column;
+            }
+        
+        .fourth-section__card-wrapper
+            {
+                margin-left: 0;
+            }
+        
+        .fourth-section__advantages-and-application,
+        .fourth-section__application-pig-container
+            {
+                display: none;
+            }
+        
+        .fifth-section__img-blocks
+            {
+                margin-top: 130px;
+                align-self: center;
+            }
+        
+        .sixth-section__card-list
+            {
+                flex-direction: column;
+                align-items: center;
+            }
+    }
+
+@media (max-width: 770px)
+    {    
+        .first-section__container
+            {
+                padding: 85px 18px 61px 18px;
+                max-width: 340px;
+            }
+        
+        .first-section__body
+            {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+            }
+        
+        .first-section__container,
+        .first-section__body
+            {
+                max-height: 476px;
+            }
+        
+        .first-section__title
+            {
+                font-size: 23px;
+                line-height: 31px;
+            }
+        
+        .first-section__copy
+            {
+                font-size: 14px;
+                line-height: 19px;
+                margin-top: 16px;
+            }
+        
+        .first-section__button-container
+            {
+                flex-direction: column;
+                gap: 25px;
+                margin-top: 32px;
+            }
+        
+        .first-section__button
+            {
+                width: 100%;
+            }
+        
+        .second-section__container
+            {
+                padding: 36px 17px 1100px 17px;
+            }
+        
+        .second-section__list-with-img,
+        .second-section__card-footer
+            {
+                display: none;
             }
         
         .third-section__section-container
@@ -1191,27 +1250,12 @@ footer
                 margin-top: 60px;
             }
         
-        .fourth-section__cards-group
-            {
-                flex-direction: column;
-            }
-        
-        .fourth-section__card-wrapper
-            {
-                margin-left: 0;
-            }
-        
-        .fourth-section__advantages-and-application,
-        .fourth-section__application-pig-container
-            {
-                display: none;
-            }
-        
             .fifth-section
                 {
                     background-image: none;
                     background-color: rgba(255, 255, 255, 1);
                     z-index: 1;
+                    height: 195px;
                 }
         
             .fifth-section__container
@@ -1249,6 +1293,7 @@ footer
                 background-image: url('../images/plugs/mobile-slider-plug2.jpg');
                 margin-left: auto;
                 margin-right: auto;
+                display: flex;
             }
         
         .sixth-section
@@ -1292,8 +1337,28 @@ footer
                 max-width: 340px;
             }
         
+        .seventh-section__map-container--phone-inline
+            {
+                display: inline;
+            }
+        
         .seventh-section__map-container--phone-none
             {
                 display: none;
+            }
+    }
+
+@media (max-width: 373px)
+    {
+        header,
+        main,
+        footer
+            {
+                display: none;
+            }
+        
+        .duck
+            {
+                display: inline-block;
             }
     }
