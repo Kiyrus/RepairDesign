@@ -241,7 +241,8 @@ footer
     {
         display: flex;
         flex-direction: column;
-        padding: 107px 0px 416px 42px;
+        padding: 107px 0px 732px 42px;
+        margin-bottom: -300px;
     }
 
 .second-section__card
@@ -332,7 +333,6 @@ footer
     {
         display: flex;
         flex-direction: column;
-        justify-self: start;
         gap: 52px;
         max-height: 550px;
     }
@@ -370,7 +370,6 @@ footer
         flex-direction: column;
         align-items: center;
         max-width: 817px;
-        margin-top: -324px;
     }
 
 .third-section__subtitle
@@ -1063,6 +1062,7 @@ footer
         .first-section__container
             {
                 padding: 85px 18px 61px 18px;
+                max-width: 340px;
             }
         .first-section__body
             {
@@ -1108,9 +1108,20 @@ footer
                 display: none;
             }
         
+        .second-section__card
+            {
+                justify-content: center;
+            }
+        
         .second-section__card-title
             {
                 text-align: center;
+            }
+        
+        .second-section__mobile-slider
+            {
+                margin-left: auto;
+                margin-right: auto;
             }
         
         .third-section__section-container
@@ -1124,6 +1135,7 @@ footer
                 line-height: 19px;
                 text-align: center;
                 color: rgba(255, 255, 255, 1);
+                max-width: 340px;
             }
         
         .third-section__form-body
@@ -1132,7 +1144,14 @@ footer
                 flex-direction: column;
                 margin-top: 50px;
                 max-height: 850px;
+                max-width: 340px;
                 width: 100%;
+            }
+        
+        .third-section__video-player-container
+            {
+                max-width: 340px;
+                max-height: 207px;
             }
         
         .third-section__form-text-over-input
@@ -1153,6 +1172,7 @@ footer
         .third-section__form-button
             {
                 width: 100%;
+                max-width: 340px;
             }
         
         .third-section__checkbox-text
@@ -1227,6 +1247,8 @@ footer
         .fifth-section__mobile-slider
             {
                 background-image: url('../images/plugs/mobile-slider-plug2.jpg');
+                margin-left: auto;
+                margin-right: auto;
             }
         
         .sixth-section
@@ -1267,6 +1289,7 @@ footer
         .seventh-section__form-button
             {
                 width: 100%;
+                max-width: 340px;
             }
         
         .seventh-section__map-container--phone-none
