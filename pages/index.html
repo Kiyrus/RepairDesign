@@ -160,7 +160,7 @@
                         <label class="third-section__checkbox-body">
                             <input type="checkbox" class="checkbox">
                             <span class="fake"></span>
-                            <span class="text">
+                            <span class="third-section__checkbox-text text">
                                 I agree to the processing of personal data.
                             </span>
                         </label>
@@ -555,31 +555,42 @@
                 </div>
             </section>
             <section class="seventh-section section">
+                <div class="seventh-section__section-cover section__cover"></div>
                 <div class="seventh-section__container section__container">
                     <form class="seventh-section__form-body form-body">
                         <p class="seventh-section__form-text">
                             have any questions?
                         </p>
-                        <label class="seventh-section__form-name">
-                            Name <input type="text" name="What is your name:">
-                        </label>
-                        <label class="seventh-section__form-number">
-                            Phone <input type="text" name="Your phone number:">
-                        </label>
-                        <label class="seventh-section__form-optional">
-                            Question <input type="text" name="I want to know:">
-                        </label>
+                        <div class="seventh-section__form-wrapper">
+                            <div class="seventh-section__form-container-name-phone">
+                                <label class="seventh-section__form seventh-section__form--name">
+                                    <span class="seventh-section__form-text-over-input">Name</span>
+                                    <input class="seventh-section__form-input" type="text" name="name" placeholder="What is your name:">
+                                </label>
+                                <label class="seventh-section__form seventh-section__form--number">
+                                    <span class="seventh-section__form-text-over-input">Phone</span>
+                                    <input class="seventh-section__form-input" type="text" name="number" placeholder="Your phone number:">
+                                </label>
+                            </div>
+                            <label class="seventh-section__form seventh-section__form--optional">
+                                <span class="seventh-section__form-text-over-input">Question</span>
+                                <input class="seventh-section__form-input" type="text" name="question" placeholder="I want to know:">
+                            </label>
+                        </div>
                         <div class="checkbox-container">
                             <label class="seventh-section__checkbox-body">
                                 <input type="checkbox" class="checkbox" >
                                 <span class="fake"></span>
-                                <span class="text">I agree to the processing of personal data.</span>
+                                <span class="seventh-section__checkbox-text text">I agree to the processing of personal data.</span>
                             </label>
                         </div>
                         <button class="seventh-section__form-button button" type="button">
                             SUBMIT
                         </button>
                     </form>
+                    <div class="seventh-section__map-container seventh-section__map-container--phone-inline"> 
+                        <img class="seventh-section__map-plug" src="../images/plugs/map_plug.jpg" alt="plug for map">
+                    </div>
                     <h3 class="seventh-section__subtitle subtitle">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</h3>
                     <div class="seventh-section_svg-group">
                         <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -593,7 +604,7 @@
                             <path d="M16.4 14.3434C16.4741 14.8427 16.3888 15.3527 16.1563 15.8008C15.9238 16.2489 15.5559 16.6122 15.105 16.8392C14.6541 17.0661 14.1431 17.1451 13.6447 17.0649C13.1463 16.9847 12.6859 16.7494 12.3289 16.3925C11.972 16.0355 11.7367 15.5751 11.6565 15.0767C11.5763 14.5783 11.6553 14.0673 11.8822 13.6164C12.1092 13.1655 12.4725 12.7976 12.9206 12.5651C13.3687 12.3326 13.8787 12.2473 14.378 12.3214C14.8874 12.3969 15.3589 12.6343 15.723 12.9984C16.0872 13.3625 16.3245 13.834 16.4 14.3434Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <div class="seventh-section__map-container"> 
+                    <div class="seventh-section__map-container seventh-section__map-container--phone-none"> 
                         <img class="seventh-section__map-plug" src="../images/plugs/map_plug.jpg" alt="plug for map">
                     </div>
                 </div>
