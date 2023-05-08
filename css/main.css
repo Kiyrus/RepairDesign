@@ -104,9 +104,15 @@ footer
         width: 340px;
         height: 241.35px;
         flex-shrink: 0;
-        display: flex;
+        display: none;
         justify-content: space-between;
         padding: 13px;
+    }
+
+.fourth-section__input,
+.seventh-section__form-input
+    {
+        color: rgba(255, 255, 255, 1);
     }
 
 .bar__body
@@ -1074,6 +1080,11 @@ footer
         .second-section__list-with-img
             {
                 display: none;
+            }
+        
+        .mobile-slider
+            {
+                display: flex;
             }
         
         .bar__navigation,
