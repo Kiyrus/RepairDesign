@@ -248,7 +248,7 @@ footer
     {
         display: flex;
         flex-direction: column;
-        padding: 107px 0px 732px 42px;
+        padding: 107px 0px 450px 42px;
         margin-bottom: -300px;
     }
 
@@ -1077,6 +1077,12 @@ footer
                 height: 57px;
             }
         
+            .second-section
+            {
+                height: 1300px;
+                margin-bottom: -300px;
+            }
+        
         .second-section__list-with-img
             {
                 display: none;
@@ -1189,6 +1195,11 @@ footer
                 width: 100%;
             }
         
+        .second-section
+            {
+                height: 1600px;
+            }
+        
         .second-section__container
             {
                 padding: 36px 17px 1100px 17px;
@@ -1202,7 +1213,7 @@ footer
         
         .third-section__section-container
             {
-                margin-top: -812px;
+                margin-top: -810px;
             }
         
         .third-section__copy
