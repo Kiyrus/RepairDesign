@@ -1092,7 +1092,10 @@ footer
             {
                 display: flex;
             }
-        
+        .second-section__card-paging
+            {
+                display: none;
+            }
         .bar__navigation,
         .bar__button
             {
