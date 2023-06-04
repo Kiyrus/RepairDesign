@@ -325,6 +325,20 @@ footer
         line-height: 21px;
     }
 
+.replacementCity,
+.replacementApartmentArea,
+.replacementRepairTime
+    {
+        display: none;
+    }
+
+.replacementCity--active,
+.replacementApartmentArea--active,
+.replacementRepairTime--active
+    {
+        display: inline;
+    }
+
 .second-section__card-paging,
 .second-section__button-group
     {
