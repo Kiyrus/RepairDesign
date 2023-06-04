@@ -269,6 +269,12 @@ footer
 .second-section__mobile-slider-button
     {
         z-index: 1;
+        width: 75px;
+        height: 75px;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: row;
     }
 
 .second-section__img-mobile
@@ -276,6 +282,12 @@ footer
         z-index: 0;
         margin-left: -10%;
         margin-right: -10%;
+        display: none;
+    }
+
+.second-section__img-mobile--active
+    {
+        display: block;
     }
 
 .second-section__card-title

@@ -1,4 +1,7 @@
 // Получаем необходимые элементы
+const mobileImages = document.querySelectorAll('.second-section__img-mobile');
+const mobileHandLeft = document.querySelector('.second-section__mobile-slider-button-left');
+const mobileHandRight = document.querySelector('.second-section__mobile-slider-button-right');
 const images = document.querySelectorAll('.second-section__img');
 const buttons = document.querySelectorAll('.second-section__button');
 const handLeft = document.querySelector('.second-section__hand-left');
@@ -11,6 +14,7 @@ const replacementRepairTimes = document.querySelectorAll('.replacementRepairTime
 // Функция для переключения слайдов
 function switchSlide(index) {
   // Удаляем класс "active" у всех изображений и кнопок
+    mobileImages.forEach(mobileImage => mobileImage.classList.remove('second-section__img-mobile--active'));
     images.forEach(image => image.classList.remove('second-section__img--active'));
     buttons.forEach(button => button.classList.remove('second-section__button--active'));
     listButtons.forEach(listButton => listButton.classList.remove('second-section__list-button--active'));
@@ -19,6 +23,7 @@ function switchSlide(index) {
     replacementRepairTimes.forEach(replacementRepairTime => replacementRepairTime.classList.remove('replacementRepairTime--active'));
 
   // Добавляем класс "active" к выбранному слайду и кнопке
+    mobileImages[index].classList.add('second-section__img-mobile--active');
     images[index].classList.add('second-section__img--active');
     buttons[index].classList.add('second-section__button--active');
     listButtons[index].classList.add('second-section__list-button--active');
@@ -71,6 +76,20 @@ handRight.addEventListener('click', () => {
     const currentIndex = Array.from(buttons).findIndex(button => button.classList.contains('second-section__button--active'));
     const nextIndex = currentIndex === buttons.length - 1 ? 0 : currentIndex + 1;
     switchSlide(nextIndex);
+});
+
+mobileHandLeft.classList.add('second-section__mobile-slider-button-left');
+mobileHandLeft.addEventListener('click', () => {
+    const currentIndex = Array.from(buttons).findIndex(button => button.classList.contains('second-section__button--active'));
+    const prevIndex = currentIndex === 0 ? buttons.length - 1 : currentIndex - 1;
+    switchSlide(prevIndex);
+});
+
+mobileHandRight.classList.add('second-section__mobile-slider-button-left');
+mobileHandRight.addEventListener('click', () => {
+    const currentIndex = Array.from(buttons).findIndex(button => button.classList.contains('second-section__button--active'));
+    const prevIndex = currentIndex === 0 ? buttons.length - 1 : currentIndex - 1;
+    switchSlide(prevIndex);
 });
 
 // По умолчанию показываем первый слайд
