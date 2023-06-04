@@ -336,6 +336,7 @@ footer
 .second-section__hand-right
     {
         cursor: pointer;
+        margin-top: -1%;
     }
 
 .second-section__point
@@ -390,21 +391,28 @@ footer
         text-transform: uppercase;
     }
 
-.second-section__list-link
+.second-section__list-button
     {
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        white-space: nowrap;      
         text-decoration: none;
         color: rgba(255, 255, 255, 0.3);
         cursor: pointer;
     }
 
-.second-section__list-link--active
+.second-section__list-button--active
     {
         display: block;
         color: rgba(227, 184, 115, 1);
         text-decoration: underline;
     }
 
-.second-section__list-link:hover
+.second-section__list-button:hover
     {
         color: rgba(227, 184, 115, 1);
         text-decoration: underline;
