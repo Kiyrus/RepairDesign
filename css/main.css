@@ -326,7 +326,7 @@ footer
     }
 
 .second-section__card-paging,
-.second-section__point-group
+.second-section__button-group
     {
         display: flex;
         gap: 17.5px;
@@ -339,7 +339,7 @@ footer
         margin-top: -1%;
     }
 
-.second-section__point
+.second-section__button
     {   
         width: 9.57px;
         height: 9.57px;
@@ -348,13 +348,13 @@ footer
         cursor: pointer;
     }
 
-.second-section__point--active
+.second-section__button--active
     {
         background: rgba(255, 255, 255, 0.8);
         display: block;
     }
 
-.second-section__point:hover
+.second-section__button:hover
     {
         background: rgba(255, 255, 255, 0.8);
     }
