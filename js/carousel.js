@@ -64,28 +64,24 @@ replacementRepairTimes.forEach((replacementRepairTime, index) => {
 });
 
 // Обработчики событий для стрелок переключения слайдов
-handLeft.classList.add('second-section__hand-left');
 handLeft.addEventListener('click', () => {
     const currentIndex = Array.from(buttons).findIndex(button => button.classList.contains('second-section__button--active'));
     const prevIndex = currentIndex === 0 ? buttons.length - 1 : currentIndex - 1;
     switchSlide(prevIndex);
 });
 
-handRight.classList.add('second-section__hand-right');
 handRight.addEventListener('click', () => {
     const currentIndex = Array.from(buttons).findIndex(button => button.classList.contains('second-section__button--active'));
     const nextIndex = currentIndex === buttons.length - 1 ? 0 : currentIndex + 1;
     switchSlide(nextIndex);
 });
 
-mobileHandLeft.classList.add('second-section__mobile-slider-button-left');
 mobileHandLeft.addEventListener('click', () => {
     const currentIndex = Array.from(buttons).findIndex(button => button.classList.contains('second-section__button--active'));
     const prevIndex = currentIndex === 0 ? buttons.length - 1 : currentIndex - 1;
     switchSlide(prevIndex);
 });
 
-mobileHandRight.classList.add('second-section__mobile-slider-button-right');
 mobileHandRight.addEventListener('click', () => {
     const currentIndex = Array.from(buttons).findIndex(button => button.classList.contains('second-section__button--active'));
     const nextIndex = currentIndex === buttons.length - 1 ? 0 : currentIndex + 1;
@@ -94,6 +90,3 @@ mobileHandRight.addEventListener('click', () => {
 
 // По умолчанию показываем первый слайд
 switchSlide(0);
-
-// -----------------------------------------------------------------------------------------------------------------------------------------
-
