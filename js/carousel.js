@@ -11,22 +11,51 @@ const replacementApartmentAreas = document.querySelectorAll(".replacementApartme
 const replacementRepairTimes = document.querySelectorAll(".replacementRepairTime");
 
 function switchSlide(index) {
-    mobileImages.forEach((mobileImage) => mobileImage.classList.remove("second-section__img-mobile--active"));
-    images.forEach((image) => image.classList.remove("second-section__img--active"));
-    buttons.forEach((button) => button.classList.remove("second-section__button--active"));
-    listButtons.forEach((listButton) => listButton.classList.remove("second-section__list-button--active"));
-    replacementCitys.forEach((replacementCity) => replacementCity.classList.remove("replacementCity--active"));
-    replacementApartmentAreas.forEach((replacementApartmentArea) => replacementApartmentArea.classList.remove("replacementApartmentArea--active"));
-    replacementRepairTimes.forEach((replacementRepairTime) => replacementRepairTime.classList.remove("replacementRepairTime--active"));
-
-    mobileImages[index].classList.add("second-section__img-mobile--active");
-    images[index].classList.add("second-section__img--active");
-    buttons[index].classList.add("second-section__button--active");
-    listButtons[index].classList.add("second-section__list-button--active");
-    replacementCitys[index].classList.add("replacementCity--active");
-    replacementApartmentAreas[index].classList.add("replacementApartmentArea--active");
-    replacementRepairTimes[index].classList.add("replacementRepairTime--active");
+    const classLists = [
+        ["second-section__img-mobile--active", mobileImages],
+        ["second-section__img--active", images],
+        ["second-section__button--active", buttons],
+        ["second-section__list-button--active", listButtons],
+        ["replacementCity--active", replacementCitys],
+        ["replacementApartmentArea--active", replacementApartmentAreas],
+        ["replacementRepairTime--active", replacementRepairTimes],
+    ];
+    classLists.forEach(([className, elements]) => {
+        elements.forEach((element) => {
+            element.classList.remove(className);
+        });
+        elements[index].classList.add(className);
+    });
 }
+
+function handleSlide(direction) {
+    const currentIndex = Array.from(buttons).findIndex((button) =>
+        button.classList.contains("second-section__button--active")
+    );
+    let newIndex;
+    if (direction === "prev") {
+        newIndex = currentIndex === 0 ? buttons.length - 1 : currentIndex - 1;
+    } else if (direction === "next") {
+        newIndex = currentIndex === buttons.length - 1 ? 0 : currentIndex + 1;
+    }
+    switchSlide(newIndex);
+}
+
+handLeft.addEventListener("click", () => {
+    handleSlide("prev");
+});
+
+handRight.addEventListener("click", () => {
+    handleSlide("next");
+});
+
+mobileHandLeft.addEventListener("click", () => {
+    handleSlide("prev");
+});
+
+mobileHandRight.addEventListener("click", () => {
+    handleSlide("next");
+});
 
 buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
@@ -56,30 +85,6 @@ replacementRepairTimes.forEach((replacementRepairTime, index) => {
     replacementRepairTime.addEventListener("click", () => {
         switchSlide(index);
     });
-});
-
-handLeft.addEventListener("click", () => {
-    const currentIndex = Array.from(buttons).findIndex((button) => button.classList.contains("second-section__button--active"));
-    const prevIndex = currentIndex === 0 ? buttons.length - 1 : currentIndex - 1;
-    switchSlide(prevIndex);
-});
-
-handRight.addEventListener("click", () => {
-    const currentIndex = Array.from(buttons).findIndex((button) => button.classList.contains("second-section__button--active"));
-    const nextIndex = currentIndex === buttons.length - 1 ? 0 : currentIndex + 1;
-    switchSlide(nextIndex);
-});
-
-mobileHandLeft.addEventListener("click", () => {
-    const currentIndex = Array.from(buttons).findIndex((button) => button.classList.contains("second-section__button--active"));
-    const prevIndex = currentIndex === 0 ? buttons.length - 1 : currentIndex - 1;
-    switchSlide(prevIndex);
-});
-
-mobileHandRight.addEventListener("click", () => {
-    const currentIndex = Array.from(buttons).findIndex((button) => button.classList.contains("second-section__button--active"));
-    const nextIndex = currentIndex === buttons.length - 1 ? 0 : currentIndex + 1;
-    switchSlide(nextIndex);
 });
 
 switchSlide(0);
